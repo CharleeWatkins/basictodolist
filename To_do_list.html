@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>To-Do List Web App</title>
+<style>
+body {
+  background-color: #224466;
+  color: white;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 600px;
+  margin: 50px auto;
+  background-color: #335577;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.delete-button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.error-message {
+  color: #f44336;
+  margin-bottom: 5px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>To-Do List Web App</h1>
+
+  <div class="form-group">
+    <label for="title" class="form-label">Title:</label>
+    <input type="text" id="title" class="form-input" />
+  </div>
+
+  <div class="form-group">
+    <label for="description" class="form-label">Description:</label>
+    <textarea id="description" class="form-input"></textarea>
+  </div>
+
+  <button class="button" id="add-task-button">Add Task</button>
+
+  <ul id="task-list"></ul>
+
+  <script src="script.js"></script>
+</div>
+
+</body>
+</html>
